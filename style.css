@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    max-width: 1440px;
+}
+
+/*Main content*/
+main{
+    display: flex;
+    margin: auto;
+    height: 430px;
+    width: 800px;
+    /*vertical align*/
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+main h1{
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 1em;
+}
+main p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 2em;
+    padding-bottom: 90px;
+}
+
+/*Divs*/
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px;
+}
+
+/*Buttons*/
+button{
+    border-radius: 50px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    width: 140px;
+    height: 40px;
+}
+.btn-sedans{
+    color: hsl(31, 77%, 52%);
+}
+.btn-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.btn-suv{
+    color: hsl(184, 100%, 22%);
+}
+.btn-suv:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.btn-luxury{
+    color: hsl(179, 100%, 13%);
+}
+.btn-luxury:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+
+
+/*footer*/
+.attribution { 
+    margin-top: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+}
+.attribution a { 
+    color: hsl(179, 100%, 13%);
+    text-decoration: none; 
+}
+.attribution a:hover{
+    background-color: hsl(31, 77%, 52%);
+    text-decoration: underline;
+    padding: 0 10px;
+}
+
+/*Responsive*/
+@media (max-width: 375px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        width: 300px;
+        padding-bottom: 350px;
+    }
+    .sedans{
+        border-radius: 8px 8px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 8px 8px;
+    }
+    .attribution{
+        font-size: 12px;
+        position: relative;
+        padding-top: 1200px;
+    }
+}
